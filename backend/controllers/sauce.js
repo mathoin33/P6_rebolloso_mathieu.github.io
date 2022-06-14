@@ -4,26 +4,39 @@ const Sauce = require('../models/sauce');
 //Fs permet la suppresion de l'image lordque l'utilisateur supprime un post
 const fs = require('fs');
 
+
+
+exports.createSauce = (req, res, next) => {
+    const sauce = new Sauce({
+        name: req.body.name,
+        manufacturer:req.body.manufacturer,
+        description: req.body.description,
+        heat:req.body.heat,
+        imageUrl: req.body.imageUrl,
+        mainPepper: req.body.mainPepper,
+        userId: req.body.userId,
+        heatValue: req.body.heatValue
+    });
+    sauce.save().then(
+        () => {
+            res.status(201).json({
+                message: 'Post saved successfully!'
+            });
+        }
+    ).catch(
+        (error) => {
+            res.status(400).json({
+                error: error
+            });
+        }
+    );
+};
+
 //On créer une sauce
 //req contient la requête que la bdd nous retourne
 //res est la réponse attendus
 //next passer au prochain middleware
-exports.createSauce = (req, res, next) => {
-    //on transforme la req en objet
-    const sauceObj = JSON.parse(req.body.sauce);
-    //On récupère l'id pour la suppresion
-    delete sauceObj._id;
-    //Créer la nouvelle sauce
-    const sauce = new Sauce({
-        //... les 3 petits points permettent de récupérer tout ce qui est dans le req.body
-        ...sauceObj,
-        imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
-    });
-    //La sauce est bien enreigstré en bdd
-    sauce.save()
-        .then(() => res.status(201).json({ message: 'Objet enregistré !'}))
-        .catch(error => res.status(400).json({ error }));
-}
+
 
 //Récupération de toutes les sauces en bdd
 exports.getAllSauce = (req, res, next) => {
@@ -40,6 +53,7 @@ exports.getOneSauce = (req, res, next) => {
         .then(sauce => res.status(200).json(sauce))
         .catch(error => res.status(404).json({ error }));
 }
+
 
 //Permet de modifier la sauce
 exports.updateSauce = (req, res, next) => {
