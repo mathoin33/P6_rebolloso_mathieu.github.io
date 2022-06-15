@@ -87,7 +87,6 @@ exports.deleteSauce = (req, res, next) => {
         .catch(error => res.status(500).json({ error }));
 }
 
-
 // Aimer ou pas une sauce
 exports.likeOrNot = (req, res, next) => {
     //Like compte comme un 1, donc si on like c'est positif
