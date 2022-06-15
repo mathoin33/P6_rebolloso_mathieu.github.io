@@ -5,33 +5,18 @@ const Sauce = require('../models/sauce');
 const fs = require('fs');
 
 
-
 exports.createSauce = (req, res, next) => {
-    const sauce = new Sauce({
-        name: req.body.name,
-        manufacturer:req.body.manufacturer,
-        description: req.body.description,
-        heat:req.body.heat,
-        imageUrl: req.body.imageUrl,
-        mainPepper: req.body.mainPepper,
-        userId: req.body.userId,
-        heatValue: req.body.heatValue
-    });
-    sauce.save().then(
-        () => {
-            res.status(201).json({
-                message: 'Post saved successfully!'
-            });
-        }
-    ).catch(
-        (error) => {
-            res.status(400).json({
-                error: error
-            });
-        }
-    );
-};
+    const sauceObject = JSON.parse(req.body.sauce);
 
+    delete sauceObject._id;
+    const sauce = new Sauce({
+        ...sauceObject,
+        imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
+    });
+    sauce.save()
+        .then(() => res.status(201).json({ message: 'Objet enregistré !'}))
+        .catch(error => res.status(400).json({ error }));
+};
 //On créer une sauce
 //req contient la requête que la bdd nous retourne
 //res est la réponse attendus
@@ -56,7 +41,7 @@ exports.getOneSauce = (req, res, next) => {
 
 
 //Permet de modifier la sauce
-exports.updateSauce = (req, res, next) => {
+exports.updateSauce= (req, res, next) => {
     //On regarde si l'image est aussi modifié avec les autres informations
     const sauceObj = req.file ?
         {
@@ -89,20 +74,16 @@ exports.deleteSauce = (req, res, next) => {
 
 // Aimer ou pas une sauce
 exports.likeOrNot = (req, res, next) => {
-    //Like compte comme un 1, donc si on like c'est positif
     if (req.body.like === 1) {
-        //Si l'user a liker alors on ajoute en bdd son like avec l'user id et le like et on incrémente le like si il y en a déjà en bdd
+        console.log(req);
         Sauce.updateOne({ _id: req.params.id }, { $inc: { likes: req.body.like++ }, $push: { usersLiked: req.body.userId } })
             .then((sauce) => res.status(200).json({ message: 'Like ajouté !' }))
             .catch(error => res.status(400).json({ error }))
-    //Disklike est compter comme -1 donc négatif
     } else if (req.body.like === -1) {
         Sauce.updateOne({ _id: req.params.id }, { $inc: { dislikes: (req.body.like++) * -1 }, $push: { usersDisliked: req.body.userId } })
             .then((sauce) => res.status(200).json({ message: 'Dislike ajouté !' }))
             .catch(error => res.status(400).json({ error }))
-    //Si l'user a déjà liker ou disliker alors on passe en dessous
     } else {
-        //On recherche le like/Dislike du post
         Sauce.findOne({ _id: req.params.id })
             .then(sauce => {
                 if (sauce.usersLiked.includes(req.body.userId)) {

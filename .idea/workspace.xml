@@ -1,57 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="12294e55-f261-4c7e-a1e6-87cdf0cb85b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../P5_rebolloso_mathieu/P5_rebolloso_code" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../P7/.idea/P7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project open classroom/    Rebollso_Mathieu_P2_transformez-une-maquette-en-site-web-avec-html-css_26-12-2021/.idea/nom_prenom_P2_transformez-une-maquette-en-site-web-avec-html-css_26-12-2021.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project open classroom/open class room/.idea/open class room.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sass/.idea/sass.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/controllers/product.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/images/kanap01.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/images/kanap02.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/images/kanap03.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/images/kanap04.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/images/kanap05.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/images/kanap06.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/images/kanap07.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/images/kanap08.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/models/Product.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/routes/product.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/back/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/css/cart.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/css/confirmation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/css/product.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/html/cart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/html/confirmation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/html/product.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/images/banniere.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/images/icons/adress.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/images/icons/mail.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/images/icons/phone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/js/cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/js/confirmation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/js/error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/js/product.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P5_rebolloso_mathieu/front/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/.idea/P6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/backend/images/Screenshot_2022-06-03_at_21.39.15.png1655073075525.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/backend/images/Screenshot_2022-06-03_at_21.39.15.png1655116034346.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rebolloso_mathieu_1_code_010622/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +17,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2AaG1R8VUpX5ZKPDvsnSBN1blJd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -80,8 +35,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -98,5 +55,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
